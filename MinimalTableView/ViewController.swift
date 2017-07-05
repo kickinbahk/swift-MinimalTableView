@@ -16,11 +16,14 @@ class ViewController: UIViewController, UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 10
+    return 100
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    return UITableViewCell()
+    let cell = UITableViewCell()
+    
+    cell.textLabel?.text = "Minimal TableView"
+    return cell
   }
 
 
